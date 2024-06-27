@@ -83,10 +83,10 @@ def takeCommand():
     return query
 
 def sendEmail():
-    senderemail = "jarvisai330@gmail.com"
-    password = "acyw nepp yhot vewj"
+    senderemail = "youremail.com"
+    password = "password"
     email_list = {
-        "anurag": "anuragmishra7576@gmail.com"
+        "anurag": "anuragmishra444@gmail.com"
     }
     try:
         email = EmailMessage()
@@ -110,7 +110,7 @@ def sendEmail():
 
 def sendWhatMsg():
     user_name = {
-        'anurag': '+91 7400239159' 
+        'anurag': '+91 9999999999' 
     }
     try:
         speak("To whom you want to send the message?")
@@ -126,7 +126,7 @@ def sendWhatMsg():
         speak("Unable to send the Message")
 
 # def news():
-#     newsapi = NewsApiClient(api_key='113527645ede49749447e87d75174d75')
+#     newsapi = NewsApiClient(api_key='your_api')
 #     speak("What topic you need the news about")
 #     topic = takeCommand().lower
 #     print(topic)
@@ -273,6 +273,6 @@ if __name__ == "__main__":   #Main method
                 os.startfile(codePath)
                 
             elif 'open code' in query:
-                codePath = "C:\\Users\\sagar\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
-                speak("Opening code, have a wonderful coding experience sir!")
+                codePath = "path to your vs code"
+                speak("Opening VS Code, have a wonderful coding experience sir!")
                 os.startfile(codePath)
